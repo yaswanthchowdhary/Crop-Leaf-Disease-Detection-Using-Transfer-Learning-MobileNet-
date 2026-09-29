@@ -1,73 +1,170 @@
-# React + TypeScript + Vite
+🌿 Crop Leaf Disease Detection Using Transfer Learning (MobileNet)
+👨‍💻 Author
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Yashwanth Chowdary
 
-Currently, two official plugins are available:
+📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Crop diseases can significantly affect agricultural productivity and crop quality. This project uses Deep Learning and Transfer Learning to detect diseases from crop leaf images.
 
-## React Compiler
+A MobileNet-based Convolutional Neural Network (CNN) is trained using transfer learning to classify leaf images into different disease categories.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The trained model can be used through a web application where users upload a crop leaf image and receive the predicted disease.
 
-## Expanding the ESLint configuration
+🚀 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔗 Live Server: https://9m4sld-r4w392awu-arcadawebapps4.vercel.app
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Replace YOUR_LIVE_SERVER_URL with your deployed application URL.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🌱 Crop leaf disease detection
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🤖 MobileNet Transfer Learning model
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📷 Upload leaf images for prediction
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📊 Disease classification
+
+⚡ Fast and lightweight model
+
+🌐 Web-based interface
+
+📱 Mobile-friendly model architecture
+
+🧠 Technology Used
+
+Python
+
+TensorFlow / Keras
+
+MobileNet
+
+Transfer Learning
+
+OpenCV
+
+NumPy
+
+Pandas
+
+Flask / Streamlit
+
+HTML & CSS
+
+Jupyter Notebook / Google Colab
+
+📂 Project Structure
+Crop-Leaf-Disease-Detection/
+│
+├── dataset/
+│   ├── train/
+│   ├── validation/
+│   └── test/
+│
+├── model/
+│   └── mobilenet_model.h5
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── notebooks/
+    └── training.ipynb
+
+🔄 Workflow
+Leaf Image
+    ↓
+Image Preprocessing
+    ↓
+MobileNet Transfer Learning
+    ↓
+Feature Extraction
+    ↓
+Disease Classification
+    ↓
+Prediction Result
+
+🏗️ Model
+
+This project uses MobileNet as the base architecture.
+
+Transfer learning allows the model to use features learned from a large image dataset and adapt them to crop leaf disease classification.
+
+The final classification layer is customized according to the number of disease classes in the dataset.
+
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/Crop-Leaf-Disease-Detection.git
+cd Crop-Leaf-Disease-Detection
+
+
+Install the required dependencies:
+
+pip install -r requirements.txt
+
+▶️ Run the Application
+
+For Flask:
+
+python app.py
+
+
+For Streamlit:
+
+streamlit run app.py
+
+
+Then open the local URL displayed in the terminal.
+
+📸 How to Use
+
+Open the web application.
+
+Upload a crop leaf image.
+
+The image is preprocessed.
+
+The MobileNet model analyzes the image.
+
+The predicted disease is displayed on the screen.
+
+📈 Model Performance
+
+The model performance can be evaluated using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix
+
+Add your actual training and testing accuracy here after completing model evaluation.
+
+🔮 Future Enhancements
+
+Add more crop and disease classes.
+
+Improve model accuracy with data augmentation.
+
+Deploy the application on a cloud server.
+
+Add disease treatment recommendations.
+
+Support real-time camera-based detection.
+
+Optimize the model for mobile devices.
+
+👤 Author
+
+Yashwanth Chowdary
+
+🌱 Crop Leaf Disease Detection using MobileNet and Transfer Learning
+
+⭐ If you find this project useful, consider giving the repository a star!
